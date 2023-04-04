@@ -9,9 +9,37 @@
                 font-size: 17px;
                 margin: 0%;
                 padding: 0%;
+                scroll-behavior: smooth;
+            }
+            .nav-button{
+                background-color: black;
+                transition: .2s;
+                text-decoration: none;
+            }
+            .nav-button:hover{
+                transform: scale(1.5);
+                cursor: pointer;
             }
             p{
                 line-height: 75px;
+            }
+            #top-nav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                height: 70px;
+                position: sticky;
+                top: 0;
+            }
+            #top-nav-container{
+                background-color: black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 600px;
+                padding-left: 50px;
+                padding-right: 50px;
             }
             #desc-title{
                 color: darkseagreen;
@@ -21,12 +49,21 @@
                 transition: .2s;
             }
             #github-icon:hover{
+                cursor: pointer;
                 opacity: 25%;
                 transform: scale(1.5);
             }
         </style>
     </head>
     <body>
+        <div id="top-nav">
+            <div id="top-nav-container">
+                <a class="nav-button" id="home-nav" href="#top">Home</a>
+                <a class="nav-button" id="projects-nav" href="#projects">Projects</a>
+                <a class="nav-button" id="about-nav" href="#about">About</a>
+                <a class="nav-button" id="contant-nav" href="#contact">Contact</a>
+            </div>
+        </div>
         <div id="hero" style="background-color: black; padding: 30px;">
             <img src="assets/hero-picture.jpeg" style="width: 450px; height: 450px; object-fit: cover; border-radius: 50%; display:block; margin-left: auto; margin-right: auto; background-color: white; padding: 5px;">
             <p style="font-size: 50px; text-align: center; background-color: black; padding-top: 10px;">Hi &#128075, I'm<br><b style="font-size: 75px; background-color: black;">Kai Vance</b></p>
