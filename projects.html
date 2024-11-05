@@ -3,88 +3,46 @@
     <head>
         <link rel="style" href="style.css">
         <style>
-            *{
-                background-color: white;
-                color:rgb(0, 0, 0);
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 17px;
-                margin: 0%;
-                padding: 0%;
-                scroll-behavior: smooth;
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             }
-            .nav-button{
-                background-color: black;
-                transition: .2s;
+
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            nav {
+                float: right;
+            }
+
+            .nav-links {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-links li {
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .nav-links li a {
+                color: #fff;
                 text-decoration: none;
+                padding: 10px 15px;
+                display: inline-block;
+                transition: background-color 0.3s;
             }
-            .nav-button:hover{
-                transform: scale(1.5);
-                cursor: pointer;
-            }
-            #socials{
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .social-button{
-                padding: 30px;
+
+            .nav-links li a:hover {
                 background-color: black;
             }
-            p{
-                margin: 0;
-                padding: 0;
-                line-height: 75px;
-                background-color: rgb(255, 255, 255);
-            }
-            a{
-                margin: 0;
-                padding: 0;
-            }
-            img{
-                margin: 0;
-                padding: 0;
-            }
-            #top-nav{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: black;
-                height: 70px;
-                position: sticky;
-                top: 0;
-            }
-            #top-nav-container{
-                background-color: black;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 600px;
-                padding-left: 50px;
-                padding-right: 50px;
-            }
-            #desc-title{
-                background-color: rgb(255, 255, 255);
-                color: rgb(0, 0, 0);
-                font-size: 50px;
-            }
-            #github-icon{
-                transition: .2s;
-            }
-            #github-icon:hover{
-                cursor: pointer;
-                opacity: 25%;
-                transform: scale(1.5);
-            }
-            #soothies-logos{
-                background-color: white;
-                display: grid;
-                grid-template-columns: repeat(3, 350px);
-                gap: 50px;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
+
+            .content {
+                padding: 50px 0;
+                text-align: center;
             }
         </style>
     </head>

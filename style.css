@@ -7,6 +7,9 @@
     padding: 0%;
     scroll-behavior: smooth;
 }
+nav{
+    justify-content: center;
+}
 .nav-button{
     background-color: black;
     transition: .2s;
